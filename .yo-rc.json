@@ -16,7 +16,7 @@
     "websocket": false,
     "databaseType": "sql",
     "devDatabaseType": "h2Disk",
-    "prodDatabaseType": "mariadb",
+    "prodDatabaseType": "mysql",
     "searchEngine": false,
     "messageBroker": false,
     "serviceDiscoveryType": false,
@@ -35,10 +35,15 @@
     ],
     "enableTranslation": true,
     "clientPackageManager": "npm",
-    "nativeLanguage": "de",
-    "languages": ["de"],
+    "nativeLanguage": "en",
+    "languages": ["en", "fr"],
     "blueprint": "generator-jhipster-vuejs",
-    "blueprintVersion": "1.0.0"
+    "blueprintVersion": "1.0.0",
+    "skipClient": false,
+    "skipServer": false,
+    "skipUserManagement": false,
+    "clientFramework": "angularX",
+    "useSass": true
   },
   "generator-jhipster-vuejs": {
     "jhipsterVersion": "6.0.1",
@@ -50,6 +55,7 @@
     "useSass": true,
     "clientPackageManager": "npm",
     "enableTranslation": true,
-    "languages": ["de"]
-  }
+    "languages": ["de", "en", "fr"]
+  },
+  "entities": []
 }

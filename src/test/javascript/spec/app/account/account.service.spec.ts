@@ -52,7 +52,7 @@ describe('Account Service test suite', () => {
     expect(store.getters.account).toBe(null);
     expect(mockedAxios.get).toHaveBeenCalledWith('api/account');
     expect(mockedAxios.get).toHaveBeenCalledWith('management/info');
-    expect(mockedAxios.get).toHaveBeenCalledWith('i18n/de.json');
+    expect(mockedAxios.get).toHaveBeenCalledWith('i18n/en.json');
   });
 
   it('should init service and retrieve account if already logged in before but exception occured and should be logged out', async () => {

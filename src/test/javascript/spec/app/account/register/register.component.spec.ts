@@ -23,7 +23,7 @@ jest.mock('axios', () => ({
 describe('Register Component', () => {
   let wrapper: Wrapper<RegisterClass>;
   let register: RegisterClass;
-  const filledRegisterAccount = { email: 'jhi@pster.net', langKey: 'de', login: 'jhi', password: 'jhipster' };
+  const filledRegisterAccount = { email: 'jhi@pster.net', langKey: 'en', login: 'jhi', password: 'jhipster' };
 
   beforeEach(() => {
     mockedAxios.get.mockReset();
@@ -84,7 +84,7 @@ describe('Register Component', () => {
 
     expect(mockedAxios.post).toHaveBeenCalledWith('api/register', {
       email: 'jhi@pster.net',
-      langKey: 'de',
+      langKey: 'en',
       login: 'jhi',
       password: 'jhipster'
     });
@@ -105,7 +105,7 @@ describe('Register Component', () => {
 
     expect(mockedAxios.post).toHaveBeenCalledWith('api/register', {
       email: 'jhi@pster.net',
-      langKey: 'de',
+      langKey: 'en',
       login: 'jhi',
       password: 'jhipster'
     });
@@ -126,7 +126,7 @@ describe('Register Component', () => {
 
     expect(mockedAxios.post).toHaveBeenCalledWith('api/register', {
       email: 'jhi@pster.net',
-      langKey: 'de',
+      langKey: 'en',
       login: 'jhi',
       password: 'jhipster'
     });
@@ -147,7 +147,7 @@ describe('Register Component', () => {
 
     expect(mockedAxios.post).toHaveBeenCalledWith('api/register', {
       email: 'jhi@pster.net',
-      langKey: 'de',
+      langKey: 'en',
       login: 'jhi',
       password: 'jhipster'
     });
