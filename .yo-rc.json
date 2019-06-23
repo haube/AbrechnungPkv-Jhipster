@@ -4,7 +4,7 @@
       "packageName": "de.haube.pkv",
       "nativeLanguage": "de"
     },
-    "jhipsterVersion": "6.1.2",
+    "jhipsterVersion": "6.0.1",
     "applicationType": "monolith",
     "baseName": "pkv",
     "packageName": "de.haube.pkv",
@@ -48,6 +48,8 @@
     "clientTheme": "none",
     "clientThemeVariant": "",
     "useSass": true,
-    "clientPackageManager": "npm"
+    "clientPackageManager": "npm",
+    "enableTranslation": true,
+    "languages": ["de"]
   }
 }
