@@ -24,6 +24,24 @@ const JhiLogsComponent = () => import('../admin/logs/logs.vue');
 const JhiAuditsComponent = () => import('../admin/audits/audits.vue');
 const JhiMetricsComponent = () => import('../admin/metrics/metrics.vue');
 /* tslint:disable */
+// prettier-ignore
+const Arzt = () => import('../entities/arzt/arzt.vue');
+// prettier-ignore
+const ArztUpdate = () => import('../entities/arzt/arzt-update.vue');
+// prettier-ignore
+const ArztDetails = () => import('../entities/arzt/arzt-details.vue');
+// prettier-ignore
+const Termin = () => import('../entities/termin/termin.vue');
+// prettier-ignore
+const TerminUpdate = () => import('../entities/termin/termin-update.vue');
+// prettier-ignore
+const TerminDetails = () => import('../entities/termin/termin-details.vue');
+// prettier-ignore
+const Rechnung = () => import('../entities/rechnung/rechnung.vue');
+// prettier-ignore
+const RechnungUpdate = () => import('../entities/rechnung/rechnung-update.vue');
+// prettier-ignore
+const RechnungDetails = () => import('../entities/rechnung/rechnung-details.vue');
 // jhipster-needle-add-entity-to-router-import - JHipster will import entities to the router here
 
 Vue.use(Router);
@@ -140,6 +158,81 @@ export default new Router({
       name: 'JhiConfigurationComponent',
       component: JhiConfigurationComponent,
       meta: { authorities: ['ROLE_ADMIN'] }
+    }
+    ,
+    {
+      path: '/entity/arzt',
+      name: 'Arzt',
+      component: Arzt,
+      meta: { authorities: ['ROLE_USER'] }
+    },
+    {
+      path: '/entity/arzt/new',
+      name: 'ArztCreate',
+      component: ArztUpdate,
+      meta: { authorities: ['ROLE_USER'] }
+    },
+    {
+      path: '/entity/arzt/:arztId/edit',
+      name: 'ArztEdit',
+      component: ArztUpdate,
+      meta: { authorities: ['ROLE_USER'] }
+    },
+    {
+      path: '/entity/arzt/:arztId/view',
+      name: 'ArztView',
+      component: ArztDetails,
+      meta: { authorities: ['ROLE_USER'] }
+    }
+    ,
+    {
+      path: '/entity/termin',
+      name: 'Termin',
+      component: Termin,
+      meta: { authorities: ['ROLE_USER'] }
+    },
+    {
+      path: '/entity/termin/new',
+      name: 'TerminCreate',
+      component: TerminUpdate,
+      meta: { authorities: ['ROLE_USER'] }
+    },
+    {
+      path: '/entity/termin/:terminId/edit',
+      name: 'TerminEdit',
+      component: TerminUpdate,
+      meta: { authorities: ['ROLE_USER'] }
+    },
+    {
+      path: '/entity/termin/:terminId/view',
+      name: 'TerminView',
+      component: TerminDetails,
+      meta: { authorities: ['ROLE_USER'] }
+    }
+    ,
+    {
+      path: '/entity/rechnung',
+      name: 'Rechnung',
+      component: Rechnung,
+      meta: { authorities: ['ROLE_USER'] }
+    },
+    {
+      path: '/entity/rechnung/new',
+      name: 'RechnungCreate',
+      component: RechnungUpdate,
+      meta: { authorities: ['ROLE_USER'] }
+    },
+    {
+      path: '/entity/rechnung/:rechnungId/edit',
+      name: 'RechnungEdit',
+      component: RechnungUpdate,
+      meta: { authorities: ['ROLE_USER'] }
+    },
+    {
+      path: '/entity/rechnung/:rechnungId/view',
+      name: 'RechnungView',
+      component: RechnungDetails,
+      meta: { authorities: ['ROLE_USER'] }
     }
     // jhipster-needle-add-entity-to-router - JHipster will add entities to the router here
   ]

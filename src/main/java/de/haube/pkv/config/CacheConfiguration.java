@@ -43,6 +43,11 @@ public class CacheConfiguration {
             createCache(cm, de.haube.pkv.domain.User.class.getName());
             createCache(cm, de.haube.pkv.domain.Authority.class.getName());
             createCache(cm, de.haube.pkv.domain.User.class.getName() + ".authorities");
+            createCache(cm, de.haube.pkv.domain.Arzt.class.getName());
+            createCache(cm, de.haube.pkv.domain.Arzt.class.getName() + ".termines");
+            createCache(cm, de.haube.pkv.domain.Arzt.class.getName() + ".rechnungens");
+            createCache(cm, de.haube.pkv.domain.Termin.class.getName());
+            createCache(cm, de.haube.pkv.domain.Rechnung.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

@@ -38,6 +38,7 @@ spring:
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
     url: jdbc:h2:file:./target/h2db/db/pkv;DB_CLOSE_DELAY=-1
+    #url: jdbc:h2:file:~/eclipse-workspace/Databases/db/pkv.h2;DB_CLOSE_DELAY=-1
     username: pkv
     password:
     hikari:
@@ -45,7 +46,7 @@ spring:
       auto-commit: false
   h2:
     console:
-      enabled: false
+      enabled: true
   jpa:
     database-platform: io.github.jhipster.domain.util.FixedH2Dialect
     database: H2

@@ -1,0 +1,32 @@
+{
+  "pkvApp": {
+    "arzt": {
+      "home": {
+        "title": "Arzts",
+        "createLabel": "Créer un nouveau Arzt",
+        "createOrEditLabel": "Créer ou éditer un Arzt"
+      },
+      "created": "Un nouveau Arzt a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Arzt avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Arzt avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Arzt {{ id }} ?"
+      },
+      "detail": {
+        "title": "Arzt"
+      },
+      "name": "Name",
+      "strasse": "Strasse",
+      "hausnummer": "Hausnummer",
+      "plz": "Plz",
+      "ort": "Ort",
+      "telefon": "Telefon",
+      "telefon2": "Telefon 2",
+      "fax": "Fax",
+      "email": "Email",
+      "web": "Web",
+      "termine": "Termine",
+      "rechnungen": "Rechnungen"
+    }
+  }
+}

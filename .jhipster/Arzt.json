@@ -1,0 +1,71 @@
+{
+    "name": "Arzt",
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "strasse",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "hausnummer",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "plz",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "ort",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "telefon",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "telefon2",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "fax",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "email",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "web",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "termin",
+            "otherEntityRelationshipName": "arzt",
+            "relationshipName": "termine"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "rechnung",
+            "otherEntityRelationshipName": "arzt",
+            "relationshipName": "rechnungen"
+        }
+    ],
+    "changelogDate": "20190623194459",
+    "entityTableName": "arzt",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

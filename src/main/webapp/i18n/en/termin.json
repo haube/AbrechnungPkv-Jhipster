@@ -1,0 +1,23 @@
+{
+  "pkvApp": {
+    "termin": {
+      "home": {
+        "title": "Termins",
+        "createLabel": "Create a new Termin",
+        "createOrEditLabel": "Create or edit a Termin"
+      },
+      "created": "A new Termin is created with identifier {{ param }}",
+      "updated": "A Termin is updated with identifier {{ param }}",
+      "deleted": "A Termin is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Termin {{ id }}?"
+      },
+      "detail": {
+        "title": "Termin"
+      },
+      "datum": "Datum",
+      "notiz": "Notiz",
+      "arzt": "Arzt"
+    }
+  }
+}
