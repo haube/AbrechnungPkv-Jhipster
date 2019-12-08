@@ -15,27 +15,27 @@ application {
 }
 
 entity Arzt {
-  name String required,
-  strasse String ,
-  hausnummer String ,
-  plz String ,
-  ort String ,
-  telefon String ,
-  telefon2 String ,
-  fax String ,
-  email String ,
+  name String required
+  strasse String 
+  hausnummer String 
+  plz String 
+  ort String 
+  telefon String 
+  telefon2 String 
+  fax String 
+  email String 
   web String 
   
 }
 
 entity Termin {
-	datum Instant required,
+	datum Instant required
     notiz String
 }
 
 entity Rechnung {
-	betrag BigDecimal,
-    datumRechnung Instant,
+	betrag BigDecimal
+    datumRechnung Instant
     datumZahlung Instant
 }
 
