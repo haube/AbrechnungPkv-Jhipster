@@ -1,0 +1,32 @@
+{
+  "pkvApp": {
+    "arzt": {
+      "home": {
+        "title": "Arzts",
+        "createLabel": "Arzt erstellen",
+        "createOrEditLabel": "Arzt erstellen oder bearbeiten"
+      },
+      "created": "Arzt erstellt mit ID {{ param }}",
+      "updated": "Arzt aktualisiert mit ID {{ param }}",
+      "deleted": "Arzt gelöscht mit ID {{ param }}",
+      "delete": {
+        "question": "Soll Arzt {{ id }} wirklich dauerhaft gelöscht werden?"
+      },
+      "detail": {
+        "title": "Arzt"
+      },
+      "name": "Name",
+      "strasse": "Strasse",
+      "hausnummer": "Hausnummer",
+      "plz": "Plz",
+      "ort": "Ort",
+      "telefon": "Telefon",
+      "telefon2": "Telefon 2",
+      "fax": "Fax",
+      "email": "Email",
+      "web": "Web",
+      "termine": "Termine",
+      "rechnungen": "Rechnungen"
+    }
+  }
+}

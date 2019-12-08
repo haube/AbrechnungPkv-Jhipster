@@ -1,0 +1,23 @@
+{
+  "pkvApp": {
+    "termin": {
+      "home": {
+        "title": "Termins",
+        "createLabel": "Termin erstellen",
+        "createOrEditLabel": "Termin erstellen oder bearbeiten"
+      },
+      "created": "Termin erstellt mit ID {{ param }}",
+      "updated": "Termin aktualisiert mit ID {{ param }}",
+      "deleted": "Termin gelöscht mit ID {{ param }}",
+      "delete": {
+        "question": "Soll Termin {{ id }} wirklich dauerhaft gelöscht werden?"
+      },
+      "detail": {
+        "title": "Termin"
+      },
+      "datum": "Datum",
+      "notiz": "Notiz",
+      "arzt": "Arzt"
+    }
+  }
+}

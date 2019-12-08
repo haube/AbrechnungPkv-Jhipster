@@ -1,0 +1,34 @@
+{
+    "name": "Rechnung",
+    "fields": [
+        {
+            "fieldName": "betrag",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "datumRechnung",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "datumZahlung",
+            "fieldType": "Instant"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipName": "arzt",
+            "otherEntityName": "arzt",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20190623194501",
+    "entityTableName": "rechnung",
+    "dto": "no",
+    "pagination": "infinite-scroll",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

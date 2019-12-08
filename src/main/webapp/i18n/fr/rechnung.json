@@ -1,0 +1,24 @@
+{
+  "pkvApp": {
+    "rechnung": {
+      "home": {
+        "title": "Rechnungs",
+        "createLabel": "Créer un nouveau Rechnung",
+        "createOrEditLabel": "Créer ou éditer un Rechnung"
+      },
+      "created": "Un nouveau Rechnung a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Rechnung avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Rechnung avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Rechnung {{ id }} ?"
+      },
+      "detail": {
+        "title": "Rechnung"
+      },
+      "betrag": "Betrag",
+      "datumRechnung": "Datum Rechnung",
+      "datumZahlung": "Datum Zahlung",
+      "arzt": "Arzt"
+    }
+  }
+}
